@@ -15,16 +15,26 @@ html,body{
 	justify-content: center;
 	flex-direction: column;
 }
-.icon, img{
+.icon{
+	position: fixed;
+	top: 1px;
+	left: 0;
+}
+.icon img{
 	width: 50px;
 	height: 50px;
 }
 .logo h1{
+	margin-top: 2px;
 	display: flex;
 	justify-content: center;
 	font-weight: normal;
 	color: orange;
 	font-size: 40px;
+}
+.container{
+	width: 50%;
+	max-width: 400px;
 }
 .container span{
 	align-items: center;
@@ -43,3 +53,10 @@ html,body{
 	background-color: #e3e3e3;
 	border-radius: 10px;
 }
+.maps{
+	border: 3px groove orange;
+	margin-top: 2%;
+	display: flex;
+	justify-content: center;
+	width: 30%;
+	
