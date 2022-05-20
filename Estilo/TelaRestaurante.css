@@ -1,0 +1,52 @@
+*{
+	margin: 0;
+	background-color: black;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Oswald', sans-serif;
+}
+
+.center{
+	align-items: center;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
+.logo h1{
+	margin-top: 2px;
+	display: flex;
+	justify-content: center;
+	font-weight: normal;
+	color: orange;
+	font-size: 40px;
+}
+
+.frente img{
+    width: 80%;
+}
+.frente{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.center h3{
+    margin-top: 2px;
+	display: flex;
+	justify-content: center;
+	font-weight: normal;
+	color: orange;
+	font-size: 20px;
+}
+
+table{
+    text-align: center;
+    width: 30%;
+    height: 20%;
+    background-color: gray;
+    color: white;
+}
+
+.preços td, th{
+    background-color: orange;
+}
