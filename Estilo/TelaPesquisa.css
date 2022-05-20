@@ -20,8 +20,11 @@ html,body{
 	left: 0;
 }
 .icon img{
-	width: 50px;
-	height: 50px;
+	width: 100px;
+	height: 100px;
+	display: flex;
+    justify-content: start;
+    padding: 18px;
 }
 .logo h1{
 	margin-top: 2px;
