@@ -49,13 +49,15 @@ html,body{
 	margin: 20px 0;
 }
 
-.container input[type=text]{
+.container input {
+	font-size: 25px;
 	margin-top: 15px;
 	width: 100%;
 	height: 50px;
 	border: 2px groove orange;
 	background-color: white;
 	border-radius: 10px;
+	outline: none;
 }
 
 .form input[type=submit]{
