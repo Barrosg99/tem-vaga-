@@ -58,7 +58,7 @@ html,body{
 	outline: none;
 }
 
-.form input[type=submit]{
+.form input[type=button]{
 	cursor: pointer;
 	border: none;
 	margin: 30px;

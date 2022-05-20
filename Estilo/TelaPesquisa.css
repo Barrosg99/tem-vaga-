@@ -54,6 +54,7 @@ html,body{
 	border: 2px groove orange;
 	background-color: #e3e3e3;
 	border-radius: 10px;
+	outline: none;
 }
 .maps{
 	border: 3px groove orange;
