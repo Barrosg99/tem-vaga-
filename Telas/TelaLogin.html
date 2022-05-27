@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-	<head>
+	<head> 
 		<title>Tela de Login</title>
 		<meta charset="utf-8">
 		<link href="../Estilo/TelaLogin.css" type="text/css" rel="stylesheet" />
@@ -9,7 +9,6 @@
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Anton&family=Oswald:wght@300&display=swap" rel="stylesheet">
 	</head>
-
 	<body>
 		<div class="form">
 			<form>
@@ -17,15 +16,13 @@
 				<h3> Encontre aqui!</h3>
 				<div class="container">
 					<span>Login</span>
-					<input type="text" name="login" required />
+					<input type="text" id="login" name="login" required />
 				</div>
-
 				<div class="container">
 					<span>Password</span>
 					<input type="password" name="nome" required />
 				</div>
-
-				<a href="./TelaPesquisa.html"><input type="button" name="ação" value="Entrar"></a>
+				<input onclick="ValidarLogin()" type="button" name="ação" value="Entrar">
 			</form>
 		</div><!--form-->
 		<div class="footer">
