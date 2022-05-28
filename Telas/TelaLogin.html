@@ -4,7 +4,6 @@
 		<title>Tela de Login</title>
 		<meta charset="utf-8">
 		<link href="../Estilo/TelaLogin.css" type="text/css" rel="stylesheet" />
-		<script src="../scripts/TelaLogin.js"></script>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,7 +20,7 @@
 				</div>
 				<div class="container">
 					<span>Password</span>
-					<input type="password" name="nome" required />
+					<input type="password" id="senha" name="nome" required />
 				</div>
 				<input onclick="ValidarLogin()" type="button" name="ação" value="Entrar">
 			</form>
@@ -29,5 +28,6 @@
 		<div class="footer">
 			<a href="/Telas/TelaCadastro.html">Não possui login?</a>
 		</div>
+	<script src="../scripts/TelaLogin.js"></script>
 	</body>
 </html>
