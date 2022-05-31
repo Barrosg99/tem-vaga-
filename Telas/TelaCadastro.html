@@ -18,30 +18,31 @@
 						
 							<div class="container">
 								<span>Email</span>
-								<input type="text" name="login" required />
+								<input type="text" id="email" name="login" required />
 							</div>
 
 							<div class="container">
 								<span>Username</span>
-								<input type="text" name="username" required> 
+								<input type="text" id="username" name="username" required> 
 							</div>
 
 							<div class="container">
 								<span>Password</span>
-								<input type="password" name="nome" required />
+								<input type="password" id="password" name="nome" required />
 							</div>
 
 							<div class="container">
 								<span>Confirm Password</span>
-								<input type="password" name="nome" required />
+								<input type="password" id="passwordConfirmation" name="nome" required />
 							</div>
 
-							<input type="submit" name="ação" value="Cadastrar">
+							<input onclick="ValidarCadastro()" type="submit" name="ação" value="Cadastrar">
 						
 					</form>
 			</div><!--form-->
 			<div class="footer">
 				<a href="/Telas/TelaLogin.html">Já possui login?</a>
 			</div>
+			<script src="../scripts/TelaCadastro.js"></script>
 	</body>
 </html>
