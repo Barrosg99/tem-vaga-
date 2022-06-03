@@ -9,7 +9,9 @@ function ValidarCadastro() {
         alert("Username inválido")
     }else if (passwordConfirmation != password){
         alert("As senhas não são iguais!")
-    }else if (password.length < 5)
+    }else if (password.length < 5){
         alert("Senha inválida!")
-    window.location.href = "./TelaPesquisa.html";
+    }else{
+        window.location.href = "./TelaPesquisa.html";
+    }   
 }

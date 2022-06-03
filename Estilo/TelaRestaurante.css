@@ -23,6 +23,7 @@
 
 .frente img{
     width: 80%;
+	border-radius: 10%;
 }
 .frente{
     display: flex;
@@ -43,10 +44,14 @@ table{
     text-align: center;
     width: 30%;
     height: 20%;
-    background-color: gray;
+    background-color: black;
     color: white;
 }
 
 .preços td, th{
     background-color: orange;
+}
+footer{
+	margin-top: 10px;
+	color: green;
 }

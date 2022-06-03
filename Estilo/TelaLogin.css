@@ -51,14 +51,14 @@ html,body{
 	margin-top: 8px;
 	width: 100%;
 	height: 50px;
-	border: 2px groove orange;
+	border: 4px groove orange;
 	background-color: white;
 	border-radius: 10px;
 	font-size: 25px;
 	outline: none;
 }
 
-.form input[type=button]{
+.form input[type=submit]{
 	cursor: pointer;
 	border: none;
 	margin: 30px;
