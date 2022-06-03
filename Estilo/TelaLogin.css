@@ -58,7 +58,7 @@ html,body{
 	outline: none;
 }
 
-.form input[type=submit]{
+.form input[type=button]{
 	cursor: pointer;
 	border: none;
 	margin: 30px;
@@ -71,7 +71,7 @@ html,body{
 	border-radius:20px ;
 }
 
-.form input[type=submit]:hover{
+.form input[type=button]:hover{
 	background-color: #ffb62e;
 }
 
