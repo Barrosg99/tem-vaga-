@@ -7,6 +7,16 @@ function ValidarLogin() {
     else{
        alert("Um dos campos abaixo foi preenchido incorretamente")
     }
-    
+
+    let user = {email, password}
+    let users = JSON.parse(localStorage.getItem("users"))
+    if (users != null) {
+        for (let cont = 0; cont < users.length; cont++) {
+            if (users[cont].email == email){
+                if (users[count].password == password){
+                    window.location.href = "./TelaPesquisa.html"
+                }
+            }
+        }
+    }
 }
- 
