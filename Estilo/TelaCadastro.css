@@ -48,6 +48,7 @@ html,body{
 }
 
 .container input {
+	padding: 5px;
 	font-size: 25px;
 	margin-top: 15px;
 	width: 100%;
