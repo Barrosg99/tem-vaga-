@@ -22,9 +22,16 @@
 				<span>Onde quer estacionar hoje?</span>
 				<input placeholder="Pesquisar" type="text" name="pesquisa" required />
 			</div>
-			<div class="container">
-				<span>Nas proximidades</span>
-				<input placeholder="Lugares Próximos" type="text" name="lugares-proximos" required />
+			<div onclick="myFunction()" class="dropdown">
+				<button class="dropbtn">
+					<span class="dropdown-span" >Lugares Próximos</span>
+					<img alt="seta para baixo" class="dropdown-svg" src="../imagens/dropdown.svg">
+				</button>
+				<div id="myDropdown" class="dropdown-content">
+					<a href="#">Endereço 1</a>
+					<a href="#">Endereço 2</a>
+					<a href="#">Endereço 3</a>
+				</div>
 			</div>
 			<div class="container">
 				<iframe class="maps"
@@ -32,7 +39,7 @@
 					width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
 					referrerpolicy="no-referrer-when-downgrade"></iframe>
 			</div>
-			
 		</div><!--center-->
+		<script src="../scripts/TelaPesquisa.js"></script>
 	</body>	
 </html>	
