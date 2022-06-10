@@ -24,6 +24,10 @@ body {
 	color: orange;
 	font-size: 40px;
 }
+
+.verificado{
+	width: 20%;
+}
 .form h3{
 	display: flex;
 	justify-content: center;

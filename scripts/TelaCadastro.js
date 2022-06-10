@@ -26,7 +26,6 @@ function ValidarCadastro() {
         cadastra(users,user)
     }   
 }
-
 function cadastra(users,user) {
 
     if (users == null) {
