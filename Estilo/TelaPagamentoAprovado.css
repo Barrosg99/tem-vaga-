@@ -95,11 +95,27 @@ h1{
     margin-top: 25px;
 }
 textarea{
+    padding: 5px;
+    outline: none;
     margin-top: 25px;
-    width: 25%;
-    height: 200px;
+    width: 20%;
+    height: 150px;
     border-radius: 10px;
     border: 4px groove orange;
     resize: none;
+}
+
+button{
+    border-radius: 10px;
+    background-color: orange;
+    margin-top: 20px;
+    width: 20%;
+    height: 50px;
+
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: rgb(255, 184, 51);
 }
 
