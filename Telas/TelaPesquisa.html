@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 	<head>
-		<title>Tela de Pesquisa</title>
+		<title>Tem vaga?</title>
 		<meta charset="utf-8">
 		<link href="../Estilo/TelaPesquisa.css" type="text/css" rel="stylesheet" />
 		<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -22,11 +22,24 @@
 				<span>Onde quer estacionar hoje?</span>
 				<input placeholder="Pesquisar" type="text" name="pesquisa" required />
 			</div>
-			<div class="container">
-				<span>Nas proximidades</span>
-				<input placeholder="Lugares Próximos" type="text" name="lugares-proximos" required />
+			<div onclick="myFunction()" class="dropdown">
+				<button class="dropbtn">
+					<span class="dropdown-span" >Lugares Próximos</span>
+					<img alt="seta para baixo" class="dropdown-svg" src="../imagens/dropdown.svg">
+				</button>
+				<div id="myDropdown" class="dropdown-content">
+					<a href="#">Endereço 1</a>
+					<a href="#">Endereço 2</a>
+					<a href="#">Endereço 3</a>
+				</div>
 			</div>
-			<iframe class="maps" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d28820.796365045997!2d-49.25479185!3d-25.4516484!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1653088131302!5m2!1spt-BR!2sbr" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+			<div class="container">
+				<iframe class="maps"
+					src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d28820.796365045997!2d-49.25479185!3d-25.4516484!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1653088131302!5m2!1spt-BR!2sbr"
+					width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+					referrerpolicy="no-referrer-when-downgrade"></iframe>
+			</div>
 		</div><!--center-->
+		<script src="../scripts/TelaPesquisa.js"></script>
 	</body>	
 </html>	
