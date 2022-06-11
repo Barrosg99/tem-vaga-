@@ -10,17 +10,20 @@ body {
 	height: 100%;
 	background-color: black;
 }
+
 .center{
 	align-items: center;
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
 }
+
 .icon{
 	position: fixed;
 	top: 1px;
 	left: 0;
 }
+
 .icon img{
 	width: 100px;
 	height: 100px;
@@ -40,16 +43,19 @@ body {
 	width: 50%;
 	max-width: 400px;
 }
-.container span{
+
+h2 {
 	align-items: center;
-	margin-top: 40px;
+	margin-top: 20px;
+	margin-bottom: 10px;
 	display: inline-block;
 	width: 100%;
 	color: orange;
 	font-size: 17px;
 	font-weight: bold;
 }
-.container input[type=text]{
+
+input {
 	padding: 5px;
 	margin-top: 10px;
 	width: 100%;
@@ -109,7 +115,7 @@ body {
 }
 
 /* Dropdown Content (Hidden by Default) */
-.dropdown-content {
+.dropdown-content, .dropdow-content {
 	display: none;
 	position: absolute;
 	background-color: #f1f1f1;
@@ -126,7 +132,7 @@ body {
 }
 
 /* Links inside the dropdown */
-.dropdown-content a {
+.dropdown-content a, .dropdow-content a {
 	color: black;
 	padding: 12px 16px;
 	text-decoration: none;
@@ -134,7 +140,7 @@ body {
 }
 
 /* Change color of dropdown links on hover */
-.dropdown-content a:hover {
+.dropdown-content a:hover, .dropdow-content a:hover {
 	background-color: #ddd
 }
 
