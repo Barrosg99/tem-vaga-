@@ -9,6 +9,16 @@ function myFunction2() {
   document.getElementById("myDropdow").classList.add("show");
 }
 
+function dropConfig() {
+  const configuracao = document.getElementById("configuracao");
+  configuracao.style.top = 0
+}
+
+function hideConfig() {
+  const configuracao = document.getElementById("configuracao");
+  configuracao.style.top = '-200px'
+}
+
 function closeDropDownsByClassName(className) {
   var dropdowns = document.getElementsByClassName(className);
   var i;
