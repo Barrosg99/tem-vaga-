@@ -12,7 +12,29 @@
 	justify-content: center;
 	flex-direction: column;
 }
-.logo h1{
+
+.center input[type=text]{
+    margin-top: 10px;
+	width: 90%;
+	height: 25px;
+	border: 2px groove orange;
+	background-color: #e3e3e3;
+	outline: none;
+	font-size: 25px;
+}
+
+.frente img{
+    width: 80%;
+	border-radius: 10%;
+}
+
+.frente{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo{
 	margin-top: 2px;
 	display: flex;
 	justify-content: center;
@@ -21,37 +43,23 @@
 	font-size: 40px;
 }
 
-.frente img{
-    width: 80%;
-	border-radius: 10%;
-}
-.frente{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.text{
+    color: orange;
 }
 
-.center h3{
-    margin-top: 2px;
+.cartao{
 	display: flex;
 	justify-content: center;
-	font-weight: normal;
-	color: orange;
-	font-size: 20px;
 }
 
-table{
-    text-align: center;
-    width: 30%;
-    height: 20%;
-    background-color: black;
-    color: white;
+.CVV input[type=text]{
+    width: 35px;
+}
+.cupons{
+    width: 320px;
+}
+.Ncartao{
+    width: 300px;
 }
 
-.preços td, th{
-    background-color: orange;
-}
-footer{
-	margin-top: 10px;
-	color: green;
-}
+
