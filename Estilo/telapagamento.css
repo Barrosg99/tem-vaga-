@@ -3,7 +3,7 @@
 	background-color: black;
 	padding: 0;
 	box-sizing: border-box;
-	font-family: 'Oswald', sans-serif;
+	font-family: 'Oswald', sans-serif; 
 }
 
 .center{
@@ -25,6 +25,7 @@
 }
 
 .frente img{
+	margin-top: 10px;
     width: 80%;
 	border-radius: 10%;
 }
@@ -45,20 +46,46 @@
 }
 
 .text{
+	margin-bottom: -10px;
+	margin-top: 15px;
     color: orange;
 }
 
 .cartao{
 	display: flex;
-	justify-content: center;
+	justify-content: left;
 }
 
 .CVV input[type=text]{
-    width: 40px;
+    width: 50px;
 }
 .alinhamento{
     width: 400px;
 }
+.card{
+	width: 310px;
+}
+.voltar{
+	width: 100px;
+	height: 30px;
+	background-color: white;
+}
 
+footer{
+	margin-top: 10px;
+}
+.confirmar{
+	width: 100px;
+	height: 30px;
+	background-color: rgb(2, 255, 2);
+}
 
+.voltar:hover{
+	background-color: gray;
+	cursor: pointer;
+}
 
+.confirmar:hover{
+	background-color: green;
+	cursor: pointer;
+}
