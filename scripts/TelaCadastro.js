@@ -3,6 +3,7 @@ function ValidarCadastro() {
     let email = document.getElementById("email").value
     let password = document.getElementById("password").value
     let passwordConfirmation = document.getElementById("passwordConfirmation").value
+
     if (email.length < 5){
         alert("Email inválido")
     }else if(username.length < 5){
@@ -14,7 +15,7 @@ function ValidarCadastro() {
     }else{
         let user = {username, email, password}
         let users = JSON.parse(localStorage.getItem("users"))
-        //verifica se usuario ja existe
+
         if (users != null) {
             for (let cont = 0; cont < users.length; cont++) {
                 if (users[cont].email == email){
@@ -26,14 +27,18 @@ function ValidarCadastro() {
         cadastra(users,user)
     }   
 }
+
 function cadastra(users,user) {
 
     if (users == null) {
+        user.id = 1
         users = [user]
     }
-    else{
+    else {
+        user.id = users[users.length - 1].id + 1
         users.push(user)
     }
     localStorage.setItem('users', JSON.stringify(users))
-    window.location.href = "./TelaLogin.html";
+
+    window.location.href = "./Telas/TelaLogin.html";
 }

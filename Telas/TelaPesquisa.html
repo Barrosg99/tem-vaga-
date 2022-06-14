@@ -12,15 +12,33 @@
 	</head>
 	<body>
 		<div class="icon">
-			<img alt="engrenagem" class="engrenagem" src="../imagens/engrenagem.png">
+			<img alt="engrenagem" onclick="dropConfig()" class="engrenagem" src="../imagens/engrenagem.png">
+			<div class="configuracao" id="configuracao" >
+				<div>
+					<a href="./TelaCriaRestaurante.html">Adicionar Restaurante</a>
+					<p>Editar Conta</p>
+					<p>Sair da Conta</p>
+				</div>
+				<p onclick="hideConfig()" >Fechar</p>
+			</div>
 		</div>
 		<div class="center">
 			<div class="logo">
 				<h1> Tem vaga?</h1>
+				<h2>Onde quer estacionar hoje?</h2>
 			</div>
-			<div class="container">
-				<span>Onde quer estacionar hoje?</span>
-				<input placeholder="Pesquisar" type="text" name="pesquisa" required />
+			<div class="dropdown">
+				<input 
+				placeholder="Pesquisar" 
+				class="pesquisa" 
+				onkeypress="myFunction2()" 
+				onfocus="myFunction2()" 
+				/>
+				<div id="myDropdow" class="dropdow-content">
+					<a href="#">Endereço 1</a>
+					<a href="#">Endereço 2</a>
+					<a href="#">Endereço 3</a>
+				</div>
 			</div>
 			<div onclick="myFunction()" class="dropdown">
 				<button class="dropbtn">

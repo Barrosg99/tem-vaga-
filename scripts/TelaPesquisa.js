@@ -4,16 +4,39 @@ function myFunction() {
   document.getElementById("myDropdown").classList.toggle("show");
 }
 
+function myFunction2() {
+  console.log('aaa');
+  document.getElementById("myDropdow").classList.add("show");
+}
+
+function dropConfig() {
+  const configuracao = document.getElementById("configuracao");
+  configuracao.style.top = 0
+}
+
+function hideConfig() {
+  const configuracao = document.getElementById("configuracao");
+  configuracao.style.top = '-200px'
+}
+
+function closeDropDownsByClassName(className) {
+  var dropdowns = document.getElementsByClassName(className);
+  var i;
+  for (i = 0; i < dropdowns.length; i++) {
+    var openDropdown = dropdowns[i];
+    if (openDropdown.classList.contains('show')) {
+      openDropdown.classList.remove('show');
+    }
+  }
+}
+
 // Close the dropdown menu if the user clicks outside of it
 window.onclick = function (event) {
   if (!event.target.matches('.dropbtn') && !event.target.matches('.dropdown-span') && !event.target.matches('.dropdown-svg')) {
-    var dropdowns = document.getElementsByClassName("dropdown-content");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
-      }
-    }
+    closeDropDownsByClassName('dropdown-content')
+  }
+
+  if (!event.target.matches('.pesquisa')) {
+    closeDropDownsByClassName('dropdow-content')
   }
 }
