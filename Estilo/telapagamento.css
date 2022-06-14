@@ -11,12 +11,13 @@
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
+    
 }
 
 .center input[type=text]{
     margin-top: 10px;
 	width: 90%;
-	height: 25px;
+	height: 33px;
 	border: 2px groove orange;
 	background-color: #e3e3e3;
 	outline: none;
@@ -53,13 +54,11 @@
 }
 
 .CVV input[type=text]{
-    width: 35px;
+    width: 40px;
 }
-.cupons{
-    width: 320px;
+.alinhamento{
+    width: 400px;
 }
-.Ncartao{
-    width: 300px;
-}
+
 
 
