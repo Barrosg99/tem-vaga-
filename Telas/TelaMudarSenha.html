@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <title>Tem vaga?</title>
+  <meta charset="utf-8">
+  <link href="../Estilo/TelaMudarSenha.css" type="text/css" rel="stylesheet" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Oswald:wght@300&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="./imagens/favicon.ico" type="icon">
+</head>
+<body>
+  <div class="form">
+    <form>
+      <h1> Tem vaga?</h1>
+      <h3> Encontre aqui!</h3>
+      <div class="container">
+        <span>Password atual</span>
+        <input type="password" id="password" name="nome" required />
+      </div>
+      <div class="container">
+        <span>New Password</span>
+        <input type="password" id="password" name="nome" required />
+      </div>
+      <div class="container">
+        <span>Confirm New Password</span>
+        <input type="password" id="passwordConfirmation" name="nome" required />
+      </div>
+      <input onclick="ValidarCadastro()" type="button" name="ação" value="Cadastrar!">
+    </form>
+  </div>
+  <!--form-->
+  <script src="./scripts/TelaCadastro.js"></script>
+</body>
+</html>

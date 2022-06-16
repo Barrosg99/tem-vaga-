@@ -1,0 +1,92 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Oswald', sans-serif;
+}
+
+html,body{
+	height: 100%;
+	background-color: black;
+}
+
+.form{
+	margin-top: 1%;
+	display: flex;
+	justify-content: center;
+}
+
+.form h1{
+	display: flex;
+	justify-content: center;
+	font-weight: normal;
+	color: orange;
+	font-size: 40px;
+}
+.form h3{
+	display: flex;
+	justify-content: center;
+	font-weight: normal;
+	color: orange;
+	font-size: 20px;
+}
+
+.container{
+	margin-top: 15px; 
+} 
+
+.container span,.form p{
+	display: inline-block;
+	width: 100%;
+	color: orange;
+	font-size: 17px;
+	font-weight: bold;
+}
+
+.form p{
+	margin: 20px 0;
+}
+
+.container input {
+	padding: 5px;
+	font-size: 25px;
+	margin-top: 15px;
+	width: 100%;
+	height: 50px;
+	border: 4px groove orange;
+	background-color: white;
+	border-radius: 10px;
+	outline: none;
+}
+
+.form input[type=button]{
+	cursor: pointer;
+	border: none;
+	margin: 30px;
+	color: black;
+	font-size: 25px;
+	width: 280px;
+	height: 56px;
+	display: inline-block;
+	background-color: orange;
+	border-radius:20px ;
+}
+
+.form input[type=button]:hover{
+	background-color: #ffb62e;
+}
+
+.footer{
+	margin-top: -10px;
+	color: orange;
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+}
+
+.footer a {
+	color: inherit;
+	font-size: 24px;
+	text-decoration: none;
+	font-weight: bold;
+}
