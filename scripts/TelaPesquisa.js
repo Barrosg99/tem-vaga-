@@ -30,7 +30,6 @@ function closeDropDownsByClassName(className) {
   }
 }
 
-// Close the dropdown menu if the user clicks outside of it
 window.onclick = function (event) {
   if (!event.target.matches('.dropbtn') && !event.target.matches('.dropdown-span') && !event.target.matches('.dropdown-svg')) {
     closeDropDownsByClassName('dropdown-content')

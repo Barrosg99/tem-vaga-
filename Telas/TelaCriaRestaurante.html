@@ -16,21 +16,26 @@
   <div class="form">
       <h1> Tem vaga?</h1>
       <h3> Encontre aqui!</h3>
-        <span>Nome</span>
-        <input id="name" name="login" />
-        <span>Endereço</span>
-        <input id="address" name="endereço" >
-        <span>URL da Imagem</span>
-        <input id="image" name="imagem" />
+      <span>Nome do Restaurante</span>
+      <input id="name" name="login" />
+      <span>Endereço</span>
+      <input id="address" name="endereço" >
+      <span>URL da Imagem</span>
+      <input id="image" name="imagem" />
+      <div class="vagas" >
         <span>Tipo de Vaga (Coberta/Descoberta)</span>
-        <input id="tipoDeVaga" name="tipoVaga" />
+        <input />
         <span>Quantidade de vaga</span>
-        <input id="tipoDeVaga" name="tipoVaga" type="number" min=0 />
-      <input onclick="ValidarCadastro()" type="button" name="ação" value="Cadastrar Restaurante">
+        <input type="number" min=0 />
+      </div>
+      <img src="../imagens/plus.svg" onclick="adicionaInputVaga()" alt="adicionar">
+      <div class="branco" onclick="removeInputVaga()" >Remover</div>
+      <input onclick="cadastraRestaurante()" type="button" name="ação" value="Cadastrar Restaurante">
   </div>
   <!-- <div class="footer">
     <a href="./Telas/TelaLogin.html">Já possui login?</a>
   </div> -->
+  <script src="../scripts/TelaCriaRestaurante.js"></script>
 </body>
 
 </html>

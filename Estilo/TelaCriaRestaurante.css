@@ -33,16 +33,11 @@ body {
   font-size: 20px;
 }
 
-.container {
-  /* margin-top: 15px;
-  max-width: 430px; */
-}
-
 span,
 .form p {
   margin-top: 15px;
   max-width: 430px;
-  display: inline-block;
+  display: block;
   width: 100%;
   color: orange;
   font-size: 17px;
@@ -82,6 +77,22 @@ input {
 
 .form input[type=button]:hover {
   background-color: #ffb62e;
+}
+
+.form img {
+  margin-top: 15px;
+  cursor: pointer;
+}
+
+.vagas {
+  width: 100%;
+  max-width: 430px;
+}
+
+.branco {
+  color: white;
+  cursor: pointer;
+  margin-top: 15px;
 }
 
 .footer {
