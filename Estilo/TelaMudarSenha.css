@@ -14,6 +14,8 @@ html,body{
 	margin-top: 1%;
 	display: flex;
 	justify-content: center;
+	flex-direction: column;
+	align-items: center;
 }
 
 .form h1{
@@ -25,7 +27,7 @@ html,body{
 }
 .form h3{
 	display: flex;
-	justify-content: center;
+	justify-content: left;
 	font-weight: normal;
 	color: orange;
 	font-size: 20px;
@@ -33,6 +35,11 @@ html,body{
 
 .container{
 	margin-top: 15px; 
+	display: flex;
+	flex-direction: column;
+    width: 100%;
+    align-items: center;
+	justify-content: center;
 } 
 
 .container span,.form p{
@@ -41,6 +48,7 @@ html,body{
 	color: orange;
 	font-size: 17px;
 	font-weight: bold;
+	max-width: 430px;
 }
 
 .form p{
@@ -52,6 +60,7 @@ html,body{
 	font-size: 25px;
 	margin-top: 15px;
 	width: 100%;
+	max-width: 430px;
 	height: 50px;
 	border: 4px groove orange;
 	background-color: white;
