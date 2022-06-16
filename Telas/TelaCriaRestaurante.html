@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
 <html lang="pt-br">
 
 <head>
@@ -14,35 +14,23 @@
 
 <body>
   <div class="form">
-    <form>
       <h1> Tem vaga?</h1>
       <h3> Encontre aqui!</h3>
-      <div class="container">
         <span>Nome</span>
         <input id="name" name="login" />
-      </div>
-      <div class="container">
         <span>Endereço</span>
         <input id="address" name="endereço" >
-      </div>
-      <div class="container">
-        <span>URl da Imagem</span>
+        <span>URL da Imagem</span>
         <input id="image" name="imagem" />
-      </div>
-      <!-- <div class="vagas">
         <span>Tipo de Vaga (Coberta/Descoberta)</span>
         <input id="tipoDeVaga" name="tipoVaga" />
-        <span>Tipo de Vaga (Coberta/Descoberta)</span>
-        <input id="tipoDeVaga" name="tipoVaga" />
-      </div> -->
-      <input onclick="ValidarCadastro()" type="button" name="ação" value="Cadastrar">
-    </form>
+        <span>Quantidade de vaga</span>
+        <input id="tipoDeVaga" name="tipoVaga" type="number" min=0 />
+      <input onclick="ValidarCadastro()" type="button" name="ação" value="Cadastrar Restaurante">
   </div>
-  <!--form-->
-  <div class="footer">
+  <!-- <div class="footer">
     <a href="./Telas/TelaLogin.html">Já possui login?</a>
-  </div>
-  <!-- <script src="./scripts/TelaCadastro.js"></script> -->
+  </div> -->
 </body>
 
 </html>

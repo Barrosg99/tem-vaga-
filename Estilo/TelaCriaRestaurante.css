@@ -12,33 +12,36 @@ body {
 }
 
 .form {
-  margin-top: 1%;
   display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
+  padding: 10px 25px;
 }
 
 .form h1 {
-  display: flex;
-  justify-content: center;
+  text-align: center;
   font-weight: normal;
   color: orange;
   font-size: 40px;
 }
 
 .form h3 {
-  display: flex;
-  justify-content: center;
+  text-align: center;
   font-weight: normal;
   color: orange;
   font-size: 20px;
 }
 
 .container {
-  margin-top: 15px;
+  /* margin-top: 15px;
+  max-width: 430px; */
 }
 
 span,
 .form p {
+  margin-top: 15px;
+  max-width: 430px;
   display: inline-block;
   width: 100%;
   color: orange;
@@ -55,6 +58,7 @@ input {
   font-size: 25px;
   margin-top: 15px;
   width: 100%;
+  max-width: 430px;
   height: 50px;
   border: 4px groove orange;
   background-color: white;
@@ -68,7 +72,8 @@ input {
   margin: 30px;
   color: black;
   font-size: 25px;
-  width: 280px;
+  width: 100%;
+  max-width: 350px;
   height: 56px;
   display: inline-block;
   background-color: orange;
