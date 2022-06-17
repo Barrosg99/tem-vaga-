@@ -9,6 +9,7 @@ function ValidarLogin() {
             if (users[cont].email == login){
                 if (users[cont].password == senha) {
                     hasLoggedUser = true
+                    localStorage.setItem('user', JSON.stringify(users[cont]))
                     window.location.href = "./TelaPesquisa.html"
                     break
                 }
