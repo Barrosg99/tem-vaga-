@@ -44,6 +44,12 @@ function voltar() {
 
   telaPesquisa.classList.remove('sumir')
   telaRestaurante.classList.add('sumir')
+
+  const vagas = document.getElementById('vaga')
+  const h1s = document.querySelectorAll('#vaga h1')
+  for (let index = 1; index < h1s.length; index++) {
+    vagas.removeChild(h1s[index])
+  }
 }
 
 function escolheRestaurante(param) {
@@ -55,7 +61,17 @@ function escolheRestaurante(param) {
 
   const logo = document.getElementById('logo')
   logo.setAttribute('src', restaurant.url)
-  console.log(restaurant);
+
+  const endereço = document.getElementById('endereco')
+  endereço.innerHTML = restaurant.endereço
+
+  const vagas = document.getElementById('vaga')
+
+  for (const vaga of restaurant.vagas) {
+    const h1 = document.createElement('h1')
+    h1.innerHTML = `${vaga.nome}: ${vaga.quantidade}`
+    vagas.appendChild(h1)
+  }
 }
 
 function dropConfig() {

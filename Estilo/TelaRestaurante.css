@@ -60,3 +60,7 @@ footer {
 	margin-top: 10px;
 	color: green;
 }
+
+footer h1:first-child {
+	color: orange;
+}
