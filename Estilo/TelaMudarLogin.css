@@ -15,6 +15,7 @@ html,body{
 	justify-content: center;
 	flex-direction: column;
 	align-items: center;
+	padding: 20px;
 }
 
 .form h1{
@@ -30,6 +31,15 @@ html,body{
 	font-weight: normal;
 	color: orange;
 	font-size: 20px;
+}
+
+.volta {
+	position: fixed;
+	top: 0;
+	right: 0;
+	padding: 18px;
+	cursor: pointer;
+	width: 100px
 }
 
 .container{
@@ -87,15 +97,26 @@ input[type=button]:hover{
 	background-color: #ffb62e;
 }
 
-.mudar{
+.mudar {
 	background-color: orange;
+	cursor: pointer;
+	text-decoration: none;
+	border: none;
+	margin: 30px;
+	color: black;
+	font-size: 25px;
+	width: 150px;
+	display: inline-block;
+	border-radius: 2px;
+	text-align: center;
+	padding: 12px;
 }
 
 .confirmar{
 	background-color: rgb(2, 255, 2);
 }
 
-.mudar[type=button]:hover{
+.mudar:hover{
 	background-color: #ffb62e;
 }
 .confirmar[type=button]:hover{

@@ -5,7 +5,7 @@ if (user) nome.innerHTML = `Olá, ${user.username}`
 //Preenche opções do dropdown
 const restaurants = JSON.parse(localStorage.getItem('restaurants'))
 const divPesquisa = document.getElementById('myDropdow')
-const divLugarProximo = document.getElementById('myDropdown')
+const divLugarProximo = document.getElementById('myDropdown');
 
 for (let index = 0; index < restaurants.length; index++) {
   const restaurant = restaurants[index];
@@ -34,7 +34,8 @@ function myFunction() {
 }
 
 function myFunction2() {
-  console.log('aaa');
+  const pesquisa = document.getElementById('input-pesquisa').value;
+  if(!pesquisa) return;
   document.getElementById("myDropdow").classList.add("show");
 }
 

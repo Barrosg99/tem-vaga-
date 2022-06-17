@@ -13,20 +13,20 @@
 <body> 
   <div class="form">
       <h1> Tem vaga?</h1>
+      <img onclick="voltar()" class="volta" src="../imagens/back-arrow.png" alt="voltar">
       <div class="container">
-        <span>Password atual</span>
-        <input type="password" id="password" name="nome" required />
-        <span>New Password</span>
-        <input type="password" id="password" name="nome" required />
-        <span>Confirm New Password</span>
-        <input type="password" id="passwordConfirmation" name="nome" required />
+        <span>Senha atual</span>
+        <input type="password" id="actualPassword" name="nome" required />
+        <span>Nova Senha</span>
+        <input type="password" id="newPassword" name="nome" required />
+        <span>Confirmar Nova Senha</span>
+        <input type="password" id="newPasswordConfirmation" name="nome" required />
       </div>
   </div>
   <div class="butaum">
-    <input class="mudar" src="../Telas/TelaMudarLogin.html" type="button" value="Mudar Login?">
-    <input class="confirmar" onclick="ValidarCadastro()" type="button" name="ação" value="Confirmar!">
+    <a class="mudar" href="./TelaMudarLogin.html">Mudar Senha?</a>
+    <input class="confirmar" onclick="mudarSenha()" type="button" name="ação" value="Confirmar!">
   </div>
-  <!--form-->
-  <script src="./scripts/TelaCadastro.js"></script>
+  <script src="../scripts/TelaMudarSenha.js"></script>
 </body>
 </html>

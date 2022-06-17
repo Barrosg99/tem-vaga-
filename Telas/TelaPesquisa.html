@@ -12,82 +12,75 @@
 		<link rel="shortcut icon" href="../imagens/favicon.ico" type="icon">
 	</head>
 	<body>
-		<div class="icon">
-			<img alt="engrenagem" onclick="dropConfig()" class="engrenagem" src="../imagens/engrenagem.png">
-			<div class="configuracao" id="configuracao" >
-				<div>
-					<a href="./TelaCriaRestaurante.html">Adicionar Restaurante</a>
-					<p>Editar Conta</p>
-					<p onclick="logOut()" >Sair da Conta</p>
+			<div class="icon">
+				<img alt="engrenagem" onclick="dropConfig()" class="engrenagem" src="../imagens/engrenagem.png">
+				<div class="configuracao" id="configuracao">
+					<div>
+						<a href="./TelaCriaRestaurante.html">Adicionar Restaurante</a>
+						<a href="./TelaMudarLogin.html">Editar Conta</a>
+						<p onclick="logOut()">Sair da Conta</p>
+					</div>
+					<p onclick="hideConfig()">Fechar</p>
 				</div>
-				<p onclick="hideConfig()" >Fechar</p>
 			</div>
-		</div>
-		<div class="center" id="tela-pesquisa">
-			<div class="logo">
-				<h1> Tem vaga?</h1>
-				<p id="name" ></p>
-				<h2>Onde quer estacionar hoje?</h2>
-			</div>
-			<div class="dropdown">
-				<input 
-				placeholder="Pesquisar" 
-				class="pesquisa" 
-				onkeypress="myFunction2()" 
-				onfocus="myFunction2()" 
-				/>
-				<div id="myDropdow" class="dropdow-content"></div>
-			</div>
-			<div onclick="myFunction()" class="dropdown">
-				<button class="dropbtn">
-					<span class="dropdown-span" >Lugares Próximos</span>
-					<img alt="seta para baixo" class="dropdown-svg" src="../imagens/dropdown.svg">
-				</button>
-				<div id="myDropdown" class="dropdown-content"></div>
-			</div>
-			<div class="container">
+			<div class="center" id="tela-pesquisa">
+				<div class="logo">
+					<h1> Tem vaga?</h1>
+					<p id="name"></p>
+					<h2>Onde quer estacionar hoje?</h2>
+				</div>
+				<div class="dropdown">
+					<input id="input-pesquisa" placeholder="Pesquisar" class="pesquisa" onkeypress="myFunction2()" onfocus="myFunction2()" />
+					<div id="myDropdow" class="dropdow-content"></div>
+				</div>
+				<div onclick="myFunction()" class="dropdown">
+					<button class="dropbtn">
+						<span class="dropdown-span">Lugares Próximos</span>
+						<img alt="seta para baixo" class="dropdown-svg" src="../imagens/dropdown.svg">
+					</button>
+					<div id="myDropdown" class="dropdown-content"></div>
+				</div>
 				<iframe class="maps"
 					src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d28820.796365045997!2d-49.25479185!3d-25.4516484!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1653088131302!5m2!1spt-BR!2sbr"
 					width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
 					referrerpolicy="no-referrer-when-downgrade"></iframe>
 			</div>
-		</div>
-		<div class="center sumir" id="tela-restaurante">
-			<div class="logo">
-				<h1>Tem vaga?</h1>
+			<div class="center sumir" id="tela-restaurante">
+				<div class="logo">
+					<h1>Tem vaga?</h1>
+				</div>
+				<img onclick="voltar()" class="volta" src="../imagens/back-arrow.png" alt="voltar">
+				<div class="frente">
+					<img id="logo" src="../imagens/madalosso.jpg">
+				</div>
+				<div class="endereço">
+					<h3 id="endereco">Avenida Manoel Ribas, 5875, Santa Felicidade, Curitiba</h3>
+				</div>
+				<div class="hora_funcionamento">
+					<h3>Horário de funcionamento: 14h às 23h</h3>
+				</div>
+				<table class="preços">
+					<tr>
+						<th>Hora:</th>
+						<th>Preços:</th>
+					</tr>
+					<tr>
+						<td>1</td>
+						<td>R$3.00</td>
+					</tr>
+					<tr>
+						<td>2</td>
+						<td>R$5.00</td>
+					</tr>
+					<tr>
+						<td>3</td>
+						<td>R$8.00</td>
+					</tr>
+				</table>
+				<footer id="vaga">
+					<h1>Vagas Livres</h1>
+				</footer>
 			</div>
-			<img onclick="voltar()" class="volta" src="../imagens/back-arrow.png" alt="voltar">
-			<div class="frente">
-				<img id="logo" src="../imagens/madalosso.jpg">
-			</div>
-			<div class="endereço">
-				<h3 id="endereco" >Avenida Manoel Ribas, 5875, Santa Felicidade, Curitiba</h3>
-			</div>
-			<div class="hora_funcionamento">
-				<h3>Horário de funcionamento: 14h às 23h</h3>
-			</div>
-			<table class="preços">
-				<tr>
-					<th>Hora:</th>
-					<th>Preços:</th>
-				</tr>
-				<tr>
-					<td>1</td>
-					<td>R$3.00</td>
-				</tr>
-				<tr>
-					<td>2</td>
-					<td>R$5.00</td>
-				</tr>
-				<tr>
-					<td>3</td>
-					<td>R$8.00</td>
-				</tr>
-			</table>
-			<footer id="vaga">
-				<h1>Vagas Livres</h1>
-			</footer>
-		</div>
 		<script src="../scripts/TelaPesquisa.js"></script>
 	</body>	
 </html>	
